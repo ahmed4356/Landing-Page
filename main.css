@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+body {
+    font-family: sans-serif;
+}
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #343434;
+    position: relative;
+}
+/* End header */
+
+.container header {
+    width: 80%;
+    margin: auto;
+}
+.container header .logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 15px;
+}
+.container header .logo  a img {
+    width: 15%;
+    transition: .3s;
+}
+.container header .logo  a img:hover {
+    transform: scale(1.2);
+}
+.container header .logo ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container header .logo ul li {
+    font-size: 22px;
+    margin-right: 30px;
+}
+.container header .logo ul li a {
+    color: #fff;
+    transition: .3s !important;
+}
+.container header .logo ul li a:hover {
+    color: #a9a8a8 !important;
+}
+/* End header */
+
+/* Start Info Bar */
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    gap: 30px;
+    margin-top: 50px;
+}
+.info .box {
+    flex-basis: 50%;
+    margin-top: 80px;
+}
+.info .box h2 {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.info .box p {
+    margin-bottom: 30px;
+    width: 80%;
+    line-height: 1.5;
+    font-size: 23px;
+    color: #eee;
+    font-weight: normal;
+}
+.info .box a {
+    display: block;
+    width: fit-content;
+    padding: 14px 28px;
+    border: 2px solid white;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 30px;
+    color: white;
+    border-radius: 39px;
+    transition: .5s;
+}
+.info .box a:hover {
+    background-color: white;
+    color: black !important;
+} 
+
+.info .image  {
+    flex-basis: 50%;
+}
+.info .image img {
+    display: block;
+    width: fit-content;
+    margin: auto;
+}
+
+/* End Info Bar */
+
+/* Start Footer */
+.fotoer {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.fotoer img {
+    max-width: 100%;
+    width: 57px;
+    margin: 0px 5px;
+    cursor: pointer;
+    transition: .4s;
+}
+.fotoer .active {
+    transform: scale(1.2);
+}
+.fotoer img:hover {
+    transform: scale(1.2);
+}
+/* End Footer */
